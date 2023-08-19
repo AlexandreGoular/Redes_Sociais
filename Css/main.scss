@@ -1,0 +1,253 @@
+$fonteLetra: sans-serif;
+$tamanhoLetra: 15px;
+$textCenter: center;
+$borda: 1px solid purple;
+
+@keyframes fundo {
+    to {background-color: #edd4ff;}
+    from {background-color: #b8a4fa;}
+}
+
+
+body {
+    background-color: #edd4ff;
+    animation-name: fundo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+h1 {
+    text-align: center;
+    font-family: $fonteLetra;
+}
+
+article {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.primeira {
+    margin: 0 auto;
+    border: $borda;
+    width: 400px;
+    height: 200px;
+    border-radius: 6px;
+    background-color: transparent;
+
+    .imagem {
+
+        float: left;
+        height: 200px;
+        width: 200px;
+
+    }
+}
+
+
+p {
+    text-align: center;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+h3 {
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+h2 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.links {
+
+    width: 261px;
+    margin: 0 auto;
+
+    a {
+
+        text-decoration: none;
+        display: inline;
+        color: white;
+        border: $borda;
+        background-color: #b8a4fa;
+
+    }
+}
+
+.contem {
+
+    display: flex;
+    width: 800px;
+    height: 200px;
+    margin: 0 auto;
+
+    .insta {
+
+        border-radius: 6px;
+        border: $borda;
+        overflow: hidden;
+        width: 400px;
+        height: 200px;
+
+        .instagram {
+
+            float: left;
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    .facebok {
+
+        border-radius: 6px;
+        border: $borda;
+        overflow: hidden;
+        width: 400px;
+        height: 200px;
+
+        .face {
+            
+            float: left;
+            width: 200px;
+            height: 200px;
+        }
+    }
+}
+
+.redes {
+
+    width: 550px;
+    height: 200px;
+    margin: 0 auto;
+    border: $borda;
+    overflow: hidden;
+    border-radius: 6px;
+
+    .social {
+        font-family: $fonteLetra;
+        font-size: $tamanhoLetra;
+    }
+
+    .git {
+
+        width: 180px;
+        height: 140px;
+        float: left;
+
+    }
+
+    .yt {
+
+        width: 180px;
+        height: 140px;
+        float: inline-start;
+
+    }
+
+    .ins {
+
+        width: 150px;
+        height: 140px;
+        float: right;
+    }
+}
+
+@media screen and (max-width: 820px){
+
+    .contem {
+
+        display: block;
+        width: 800px;
+        height: 200px;
+    
+        .insta {
+    
+            border-radius: 6px;
+            border: $borda;
+            overflow: hidden;
+            width: 400px;
+            height: 200px;
+    
+            .instagram {
+    
+                float: left;
+                width: 200px;
+                height: 200px;
+            }
+        }
+    
+        .facebok {
+    
+            border-radius: 6px;
+            border: $borda;
+            overflow: hidden;
+            width: 400px;
+            height: 200px;
+    
+            .face {
+                
+                float: left;
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+
+    .primeira {
+
+        display: block;
+        width: 400px;
+        height: 200px;
+        overflow: hidden;
+        margin-right: 40vh;
+        margin-top: 5vh;
+    
+        .imagem {
+    
+            float: left;
+            height: 200px;
+            width: 200px;
+    
+        }
+    }
+
+    .redes {
+
+    width: 550px;
+    height: 200px;
+    margin: 0 auto;
+    border: $borda;
+    overflow: hidden;
+    border-radius: 6px;
+    display: block;
+    margin-top: 30vh;
+
+    .git {
+
+        width: 180px;
+        height: 140px;
+        float: left;
+
+    }
+
+    .yt {
+
+        width: 180px;
+        height: 140px;
+        float: inline-start;
+
+    }
+
+    .ins {
+
+        width: 150px;
+        height: 140px;
+        float: right;
+    }
+}
+}
+
+
