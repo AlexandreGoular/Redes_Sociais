@@ -1,7 +1,7 @@
 $fonteLetra: sans-serif;
 $tamanhoLetra: 15px;
 $textCenter: center;
-$borda: 1px solid purple;
+$borda: 2px solid white;
 
 @keyframes fundo {
     to {background-color: #edd4ff;}
@@ -72,7 +72,7 @@ h2 {
         display: inline;
         color: white;
         border: $borda;
-        background-color: #b8a4fa;
+        background-color: transparent;
 
     }
 }
